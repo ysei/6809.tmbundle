@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>6502</string>
+	<string>6809</string>
 	<key>ordering</key>
 	<array>
 		<string>8D1E7063-570E-4E88-AF2E-EA3CE330B2D3</string>

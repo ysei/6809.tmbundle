@@ -11,19 +11,19 @@
 	<key>foldingStopMarker</key>
 	<string>\*\*/|^\s*\}</string>
 	<key>name</key>
-	<string>6502 Assembly (DASM)</string>
+	<string>6809 Assembler</string>
 	<key>patterns</key>
 	<array>
 		<dict>
 			<key>match</key>
-<string>\b(abx|adca|adcb|adda|addb|addd|anda|andb)\b</string>
+<string>\b(abx|ABX|adca|ADCA|adcb|ADCB|adda|ADDA|addb|ADDB|addd|ADDD|anda|ANDA|andb|ANDB|andcc|ANDCC|asla|ALSA|aslb|ASLB|asl|ASL|asra|ASRA|asrb|ASRB|asr|ASR|bita|BITA|bitb|clra|clrb|clr|cmpa|cmpb|cmpd|cmps|cmpu|cmpx|cmpy|coma|comb|com|cwai|daa|deca|decb|dec|eora|eorb|exg|inca|incb|inc|jmp|jsr|lda|ldb|ldd|lds|ldu|ldx|ldy|leas|leau|leax|leay|lsl|lsra|mul|nega|negb|neg|nop|ora|orb|orcc|pshs|pshu|puls|pulu|rola|rolb|rol|rora|rorb|ror|sbca|sbcb|sex|sta|stb|std|stu|stx|sty|suba|subb|subd|tfr)\b</string>
 			<!--<string>\b(adc|and|asl|bit|clc|cld|cli|clv|cmp|cpx|cpy|dec|dex|dey|eor|inc|inx|iny|lda|ldx|ldy|lsr|nop|ora|pha|php|pla|plp|rol|ror|sbc|sec|sed|sei|sta|stx|sty|tax|txa|tay|tya|tsx|txs)\b</string> -->
 			<key>name</key>
 			<string>keyword</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(bcc|bcs|beq|bmi|bne|bpl|brk|bvc|bvs|jmp|jsr|rti|rts)\b</string>
+			<string>\b(bcc|bcs|beq|bge|bgt|bhi|bhs|ble|blo|bls|blt|bmi|bne|bpl|bra|brn|bsr|bvc|bvs|rti|rts|swi|swi2|swi3|sync|tsta|tstb|tst|IF|ELSE|ELSIF|ENDIF)\b</string>
 			<key>name</key>
 			<string>keyword.control</string>
 		</dict>
@@ -43,25 +43,25 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(SET|WORD|BYTE|HEX)\b</string>
+			<string>\b(SET|WORD|BYTE|HEX|DB|BYTE|DC.B|DW|WORD|DC.W|DL|LONG|DC.L|DRW|DS|RMB|BLKB|FCC|SEG|RSEG|SEG.U|WORDSIZE)\b</string>
 			<key>name</key>
 			<string>storage.type</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(ALIGN)\b</string>
+			<string>\b(ALIGN|EVEN|SETDP|WARNDP)\b</string>
 			<key>name</key>
 			<string>storage.modifier</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(REPEAT|REPEND|MAC|ENDM|SUBROUTINE)\b</string>
+			<string>\b(ERROR|SUBROUTINE|SUBR|INCBIN|INCLUDE|LIST|OPT|MACRO|ENDM)\b</string>
 			<key>name</key>
 			<string>support.function</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(processor|org)\b</string>
+			<string>\b(CPU|PROCESSOR|ORG)\b</string>
 			<key>name</key>
 			<string>constant.language</string>
 		</dict>
