@@ -10,7 +10,7 @@
 	<key>name</key>
 	<string>Subroutine</string>
 	<key>scope</key>
-	<string>source.assembly.6502</string>
+	<string>source.assembly.6809</string>
 	<key>tabTrigger</key>
 	<string>sub</string>
 	<key>uuid</key>

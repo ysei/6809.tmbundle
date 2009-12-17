@@ -5,6 +5,7 @@
 	<key>fileTypes</key>
 	<array>
 		<string>.s</string>
+		<string>.asm</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>/\*\*|\{\s*$</string>
@@ -17,7 +18,7 @@
 		<dict>
 			<key>match</key>
 <string>\b(abx|adca|adcb|adda|addb|addd|anda|andb|andcc|asla|aslb|asl|asra|asrb|asr|bita|bitb|clra|clrb|clr|cmpa|cmpb|cmpd|cmps|cmpu|cmpx|cmpy|coma|comb|com|cwai|daa|deca|decb|dec|eora|eorb|exg|inca|incb|inc|jmp|jsr|lda|ldb|ldd|lds|ldu|ldx|ldy|leas|leau|leax|leay|lsl|lsra|mul|nega|negb|neg|nop|ora|orb|orcc|pshs|pshu|puls|pulu|rola|rolb|rol|rora|rorb|ror|sbca|sbcb|sex|sta|stb|std|stu|stx|sty|suba|subb|subd|tfr)\b</string>
-			<!--<string>\b(adc|and|asl|bit|clc|cld|cli|clv|cmp|cpx|cpy|dec|dex|dey|eor|inc|inx|iny|lda|ldx|ldy|lsr|nop|ora|pha|php|pla|plp|rol|ror|sbc|sec|sed|sei|sta|stx|sty|tax|txa|tay|tya|tsx|txs)\b</string> -->
+			<!-- These are 6502 instructions: <string>\b(adc|and|asl|bit|clc|cld|cli|clv|cmp|cpx|cpy|dec|dex|dey|eor|inc|inx|iny|lda|ldx|ldy|lsr|nop|ora|pha|php|pla|plp|rol|ror|sbc|sec|sed|sei|sta|stx|sty|tax|txa|tay|tya|tsx|txs)\b</string> -->
 			<key>name</key>
 			<string>keyword</string>
 		</dict>
@@ -108,7 +109,7 @@
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>source.assembly.6502.dasm</string>
+	<string>source.assembly.6809.asmx</string>
 	<key>uuid</key>
 	<string>8D1E7063-570E-4E88-AF2E-EA3CE330B2D3</string>
 </dict>
